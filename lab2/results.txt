@@ -1,17 +1,18 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.7.5, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
 rootdir: /home/Anisimov/lpnuLABS/lab2
-collected 0 items / 1 error
+collected 4 items
 
-==================================== ERRORS ====================================
-__________________________ ERROR collecting tests.py ___________________________
-ImportError while importing test module '/home/Anisimov/lpnuLABS/lab2/tests.py'.
-Hint: make sure your test modules/packages have valid Python names.
-Traceback:
-tests.py:2: in <module>
-    from app import main, home_work
-app.py:2: in <module>
-    import ntplib
-E   ModuleNotFoundError: No module named 'ntplib'
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.63s ===============================
+tests.py ....                                                            [100%]
+
+============================== 4 passed in 1.11s ===============================
+========================================
+Результат без параметрів: 
+No URL passed to function
+========================================
+Результат з правильною URL: 
+Time is:  03:42:56 PM
+_________________________
+	Good Evening 	
+_________________________
+Date is:  12-07-2019
