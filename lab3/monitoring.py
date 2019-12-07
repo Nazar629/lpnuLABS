@@ -38,7 +38,7 @@ def main(url):
 '''
 if __name__ == '__main__':
     iterat = 0
-    while iterat <3; 
+    while iterat < 5:
         main("http://app:8000/health")
-        time.sleep(2)
+        time.sleep(3)
         iterat=iterat+1
