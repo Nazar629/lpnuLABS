@@ -14,5 +14,4 @@
 7. ![7](./img/7.png)</br>
 8. ![8](./img/8.png)</br>
 9. ![9](./img/9.png)</br>
-10. ![10](./img/10.png)</br>
 [LINK TO DOCKER LAB5](https://hub.docker.com/repository/docker/nazaranisimov/lab5)
