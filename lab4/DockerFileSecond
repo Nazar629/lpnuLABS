@@ -1,0 +1,28 @@
+FROM python:3.7-slim
+
+LABEL author="Anisimov Nazar"
+LABEL version=1.0
+
+# оновлюємо систему
+RUN apt-get update && apt-get upgrade -y
+
+# Встановлюємо потрібні пакети
+RUN apt-get install git -y && pip install pipenv
+
+# Створюємо робочу папку
+WORKDIR /lab
+
+# Завантажуємо файли з Git
+RUN git clone https://github.com/Nazar629/lpnuLABS.git
+
+# Створюємо остаточну робочу папку з Веб-сайтом та копіюємо туди файли
+WORKDIR /app
+RUN cp -r /lab/lpnuLABS/lab3/* .
+
+# Інсталюємо всі залежності
+RUN pipenv install requests
+#
+EXPOSE 8000
+
+# Це команда яка виконається при створенні контейнера
+ENTRYPOINT ["pipenv", "run", "python", "monitoring.py"]
